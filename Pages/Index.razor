@@ -1,0 +1,34 @@
+﻿@page "/"
+@using Syncfusion.Blazor.Buttons
+<label>Enter your age:</label>
+
+<input @bind-value=@ageValue/><br /><br />
+
+@if(ageValue<18 || ageValue > 60)
+{
+    <SfMessage Variant='MessageVariant.Outlined' 
+    Severity='MessageSeverity.Warning'
+    ContentAlignment='Syncfusion.Blazor.HorizontalAlign.Center'
+    ShowIcon=true
+    ShowCloseIcon=true
+    Visible=@isMessageVisible>
+    <p>Enter a valid age between 18 and 60</p>
+    <SfButton Content="Dismiss" @onclick="@dismissClick"></SfButton>
+</SfMessage>
+}
+
+@code{
+    public int ageValue { get; set; }
+    public bool isMessageVisible { get; set; } = true;
+
+    public void dismissClick()
+    {
+        isMessageVisible = false; 
+    }
+}
+
+<style>
+    .e-message{
+        width: 300px;
+    }
+</style>
