@@ -12,7 +12,7 @@ Watch the following video to get started with a Blazor Web Assembly app and add 
 https://www.youtube.com/watch?v=zKU580cOqjg
 
 ## Project prerequisites
-Make sure that you have the compatible versions of [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/ ) and [.NET Core SDK 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or later version in your machine before starting to work on this project.
+Make sure that you have the compatible versions of [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) and the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) installed before starting to work on this project.
 
 ## How to run this application
-To run this application, you need to first clone the `getting-started-with-the-blazor-message-component` repository and then open it in Visual Studio 2019. Now, simply build and run your project to view the output.
+Clone the `getting-started-with-the-blazor-message-component` repository and open it in Visual Studio 2022. Build and run the project to view the output. The sample is a standalone Blazor WebAssembly app targeting .NET 10 and uses Syncfusion Blazor packages version 35.2.12. No database or external service is required.
